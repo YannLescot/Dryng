@@ -1,18 +1,27 @@
-import React from 'react'
-import Home from './screens/home'
+import React, { Component } from 'react'
+import {createSwitchNavigator, createAppContainer} from 'react-navigation'
+import loadingScreen from './screens/LoadingScreen'
+import loginScreen from './screens/home'
+import dashboard from './screens/Dashboard'
+import * as firebase from 'firebase';
+import firebaseConfig from './config/config'
 
-state = {
-    fontsLoaded: false
-};
+if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+}
 
-async componentDidMount(){
-    await Font.loadAsync({
-        //font1 or 2 can be any name. This'll be used in font-family
-         
-        poppins: require('../../../assets/fonts/poppins.ttf'),
-        patrickHand: require('../../../assets/fonts/patrickHand.ttf'),                        
-    });
-    this.setState({fontsLoaded: true});
-}  
+export default class App extends React.Component {
+    render() {
+        return (
+            <AppNavigator />
+        );
+    }
+}
 
-export default () => <Home />;
+const AppSwitchNavigator = createSwitchNavigator({
+    LoadingScreen:loadingScreen,
+    LoginScreen:loginScreen,
+    Dashboard:dashboard,
+})
+
+const AppNavigator = createAppContainer(AppSwitchNavigator)

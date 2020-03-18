@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1087472130717",
+    "firebase_url": "https://dryng-4cc66.firebaseio.com",
+    "project_id": "dryng-4cc66",
+    "storage_bucket": "dryng-4cc66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087472130717:android:859e0331b5f6851e33d274",
+        "android_client_info": {
+          "package_name": "dryng.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087472130717-9rbhfb7b2ldcbind4it3jbk16n0pe10i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dryng.android",
+            "certificate_hash": "2f7ddc4e3a9a2eb70fcaddc2bc91d8932442763c"
+          }
+        },
+        {
+          "client_id": "1087472130717-usng41ktj6frv62a0jof9p15t5flsptu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR4mrggQsBgLzfaenwagM1Tj7CIsl4b7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087472130717-usng41ktj6frv62a0jof9p15t5flsptu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

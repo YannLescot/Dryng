@@ -9,11 +9,38 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    buttonContainer: {
+        flexDirection: "row",
+    },
+    ligneSeparatrice: {
+        marginTop: 5,
+        marginBottom : 5,
+        width: 260,
+        height: 0,
+        borderColor : colors.orange,
+        borderWidth: 1,
+    },
     txtConnexion: {
-        fontFamily: 'poppins',
         fontSize: 24,
         color: colors.orange,
-    }
+    },
+    buttonConnexion: {
+        width: 350,
+        height: 50,
+        backgroundColor: colors.darkred,
+        marginTop: 5,
+        marginBottom: 10,
+        paddingVertical: 10,
+        flexDirection: "row",
+
+    },
+    buttonText: {
+        color: colors.yellow,
+        fontWeight: "600",
+        textAlign: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 })
 
 export default styles;
