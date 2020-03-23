@@ -23,7 +23,7 @@ class LoadingScreen extends Component {
         })
     }
 
-    render() {
+    render(){
         return(
             <View style={styles.View1}>
                 <ActivityIndicator size="large" />
